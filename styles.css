@@ -1,0 +1,12 @@
+.fondo{
+    background-image: url(images/fondo.png);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+p{
+    text-align: justify;
+}
+footer{
+    margin-bottom: 300px;
+}

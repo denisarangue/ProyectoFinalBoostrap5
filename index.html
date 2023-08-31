@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="/images/bootstrap.png" type="image/x-icon">
+    <title>Bootstrap 5</title>
+</head>
+<body>
+  <!-- Cabecera -->
+  <div class="row fondo align-items-center">
+    <h1 class="text-white text-center">Desarrollador Full Stack</h1>
+  </div>
+
+  <!-- Menú de navegación -->
+  <nav class="navbar navbar-expand-md bg-body-tertiary sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="/images/bootstrap.png" width="30px"></a>
+      <!-- Boton hamburguesa -->
+      <button 
+        class="navbar-toggler" 
+        type="button" 
+        data-bs-toggle="collapse" 
+        data-bs-target="#navbarSupportedContent" 
+        aria-controls="navbarSupportedContent" 
+        aria-expanded="false" 
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#sobreMi">Sobre Mí</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contacto">Contacto</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Cards -->
+  <div class="container mt-3 text-center">
+    <h1 class="text-center text-uppercase fw-bold" id="skills">Mis habilidades</h1>
+    <div class="card d-inline-block" style="width: 18rem;">
+      <img src="images/c++.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">C++</h5>
+        <p class="card-text"> 5 años de experiencia. Manejo de POO y desarrollo de drivers</p>
+        <a data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-dark">Ver detalles</a>
+      </div>
+    </div>
+    <div class="card d-inline-block" style="width: 18rem;">
+      <img src="images/csharp.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">C#</h5>
+        <p class="card-text">3 años de experiencia. Conexión con Bases de datos</p>
+        <a data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-dark">Ver detalles</a>
+      </div>
+    </div>
+    <div class="card d-inline-block" style="width: 18rem;">
+      <img src="images/css.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">CSS</h5>
+        <p class="card-text">1 año de experiencia. Desarrollo de diseño responsive</p>
+        <a data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-dark">Ver detalles</a>
+      </div>
+    </div>
+    <div class="card d-inline-block" style="width: 18rem;">
+      <img src="images/html.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">HTML</h5>
+        <p class="card-text">6 años de experiencia. Desarrollo de diseño responsive</p>
+        <a data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-dark">Ver detalles</a>
+      </div>
+    </div>
+    <div class="card d-inline-block" style="width: 18rem;">
+      <img src="images/js.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">JavaScript</h5>
+        <p class="card-text">6 años de experiencia. Desarrollo web y mobile</p>
+        <a data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-dark">Ver detalles</a>
+      </div>
+    </div>
+    <div class="card d-inline-block" style="width: 18rem;">
+      <img src="images/kotlin.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Kotlin</h5>
+        <p class="card-text">6 años de experiencia. Desarrollo de escritorio y mobile</p>
+        <a data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-dark">Ver detalles</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contenido -->
+  <div class="container mt-3">
+    <h1 class="text-center text-uppercase fw-bold" id="sobreMi">Un poco sobre mí</h1>
+    <div>
+      <p class="bg-primary text-white w-25 float-start m-2 p-2 d-none d-sm-block">Soy programador full stack con 6 años de experiencia</p>
+      Soy Programador senior, con más de 6 años de experiencia en análisis, desarrollo e implementación de sistemas informáticos, como aplicaciones web, aplicaciones móviles, carros de compra, desarrollo de software a medida. Especializado en interfases de usuarios, usabilidad (UX,UI), las mismas que he aplicado en diferentes plataformas tecnológicas.<br>
+      Tengo certificaciones de Scrum Master, Design Thinking, Ethical Hacking y Análisis Forense.<br>
+    </div>
+  </div>
+
+  <!-- Contacto -->
+  <div class="container mt-3">
+    <h1 class="text-center text-uppercase fw-bold" id="contacto">Contacto</h1>
+    <form class="needs-validation" novalidate>
+      <div class="row align-items-center">
+        <div class="col-6">
+          <div class="form-group row mb-2">
+            <div class="col-md-2"><label>Nombre</label></div>
+            <div class="col-md-10">
+              <input type="text" class="form-control" placeholder="Ingresa tu nombre" required>
+              <div class="invalid-feedback">
+                Falta nombre
+              </div>
+            </div>
+          </div>
+          <div class="form-group row mb-2">
+            <div class="col-md-2"><label>Email</label></div>
+            <div class="col-md-10">
+              <input type="email" class="form-control" placeholder="Ingresa tu email" required>
+              <div class="invalid-feedback">
+                Email inválido
+              </div>
+            </div>
+          </div>
+          <div class="form-group row mb-2">
+            <div class="col-md-2"><label>Proyecto</label></div>
+            <div class="col-md-10">
+              <select class="form-select form-select-lg" multiple required>
+                <option>Programación</option>
+                <option selected>Diseño</option>
+                <option>Marketing</option>
+                <option>DevPos</option>
+              </select>
+              <div class="invalid-feedback">
+                Falta proyecto
+              </div>
+            </div>
+          </div>
+          <!-- <div class="form-group row mb-2">
+            <div class="col-md-2"><label>Pagos</label></div>
+            <div class="col-md-10">
+              <div class="form-check form-switch">
+                <label class="form-check-label" for="chkTransferencia">Transferencia</label>
+                <input class="form-check-input" type="checkbox" id="chkTransferencia">
+              </div>
+              <div class="form-check form-switch">
+                <label class="form-check-label" for="chkPaypal">Paypal</label>
+                <input class="form-check-input" type="checkbox" id="chkPaypal" checked>
+              </div>
+              <div class="form-check form-switch">
+                <label class="form-check-label" for="chkBitcoin">Bitcoin</label>
+                <input class="form-check-input" type="checkbox" id="chkBitcoin">
+              </div>
+            </div>
+          </div> -->
+
+          <div class="form-group">
+            <button class="btn btn-primary">Enviar</button>
+          </div>
+        </div>
+
+        <div class="col-6">
+          <div class="form-group row mb-2">
+            <div class="col-md-2"><label>Pagos</label></div>
+            <div class="col-md-10">
+              <div class="form-check form-switch">
+                <label class="form-check-label" for="chkTransferencia">Transferencia</label>
+                <input class="form-check-input" type="radio" id="chkTransferencia" name="pago" required>
+              </div>
+              <div class="form-check form-switch">
+                <label class="form-check-label" for="chkPaypal">Paypal</label>
+                <input class="form-check-input" type="radio" id="chkPaypal" name="pago" required>
+                <div class="invalid-feedback">
+                  Falta pago
+                </div>
+              </div>
+ 
+              <div class="form-check form-switch">
+                <label class="form-check-label" for="chkBitcoin">Bitcoin</label>
+                <input class="form-check-input" type="radio" id="chkBitcoin" name="pago" required disabled>
+              </div>
+            </div>
+          </div>
+          <img src="images/equipo.jpg" class="img-fluid img-thumbnail rounded">
+        </div>
+      </div>     
+    </form>
+  </div>
+
+  <!-- Footer -->
+  <div class="container p-4 bg-light text-center">
+    Copyright 2023 <a href="ed.team">ed.team</a>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">C++</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center">
+          <img src="/images/c++.png" class="img-fluid" alt="">
+          <p style="text-align: justify;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur cupiditate tempore ratione pariatur facere, placeat aut molestias soluta architecto delectus autem distinctio eveniet officia neque aliquam nostrum officiis non. Voluptas.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+    
+  <script 
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" 
+    crossorigin="anonymous">
+  </script>
+  <script src="index.js"></script>
+</body>
+</html>
